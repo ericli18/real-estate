@@ -15,20 +15,31 @@
         <div class="form">
             <h1>Estimate my price</h1>
             <form name="estimate" action="submit">
-                <label for="first-name">First Name: </label>
-                <input type="text" name="first-name" id="first-name" placeholder="Enter your first name">
-                <label for="last-name">Last Name: </label>
-                <input type="text" name="last-name" id="last-name" placeholder="Enter your last name">
-                <label for="email">Email: </label>
-                <input type="email" name="email" id="email" placeholder="Enter your email">
-                <label for="phone">Phone: </label>
-                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
-                <label for="rooms">Amount of rooms: </label>
-                <input type="number" min="1" max="10" name="rooms" id="rooms" placeholder="Enter the amount of rooms">
-                <label for="bathrooms">Amount of bathrooms: </label>
-                <input type="number" min="1" max="10" name="bathrooms" id="bathrooms" placeholder="Enter the amount of bathrooms">
+                <div class="name">
+                    <label for="first-name">First Name: </label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Enter your first name">
+                    <label for="last-name">Last Name: </label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Enter your last name">
+                </div>
+                <div class="contact">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="rooms">
+                    <label for="rooms">Amount of rooms: </label>
+                    <input type="number" min="1" max="10" name="rooms" id="rooms" placeholder="Enter the amount of rooms">
+                    <label for="bathrooms">Amount of bathrooms: </label>
+                    <input type="number" min="1" max="10" name="bathrooms" id="bathrooms" placeholder="Enter the amount of bathrooms">
+                </div>
                 <label for"size">Size of the house: </label>
                 <input type="range" min="1000" max="100000" name="size" id="size" placeholder="Enter the size of the house">
+
+                <div class="submit">
+                    <button type="submit">Sign up</button>
+                    <a href="https://google.com">Log in</a>
+                </div>
             </form>
         </div>
     </div>

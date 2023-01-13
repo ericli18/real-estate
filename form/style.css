@@ -1,4 +1,10 @@
+@font-face {
+    src: url("https://mdn.github.io/css-examples/web-fonts/VeraSeBd.ttf");
+    font-family: "Bitstream Vera Serif Bold";
+}
+
 *{
+    font-family: "Bitstream Vera Serif Bold", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,6 +21,7 @@
 }
 
 .form{
+    background-color: antiquewhite;
     width: 50vw;
     display: flex;
     flex-direction: column;
@@ -31,4 +38,20 @@
 form{
     display: flex;
     flex-flow: column;
+    gap: 1rem;
+}
+
+.rooms, .name, .contact{
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit{
+    padding-top: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
 }
