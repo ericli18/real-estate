@@ -97,16 +97,15 @@
         place-content: center;
     }
 
+    button.add-container {
+        all: unset;
+        transition: 0.2s ease-in-out;
+    }
+
     button.add-container
     {
         background-color: white;
         border: none;
-    }
-
-    button.add-container::selection
-    {
-        border: none;
-        background-color: white;
     }
 
     button.add-container:active
