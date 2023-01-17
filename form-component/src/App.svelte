@@ -1,5 +1,10 @@
 <script>
   import Room from './Room.svelte';
+  import Form from './Form.svelte';
 </script>
 
-<Room/>
+<Form/>
+<div class='container grid'>
+  <Room/>
+  <Room/>
+</div>
