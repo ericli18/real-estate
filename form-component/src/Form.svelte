@@ -69,16 +69,13 @@
   />
   <small>We'll never share your email or phone number with anyone else.</small>
   <div class="room-wrapper" style="display: flex; flex-direction: column;">
-    {#each rooms.slice(0, rooms.length - 1) as room (room.id)}
-      <details>
+    <!-- Don't conditionally render or it resets the forms for some reason -->
+    {#each rooms as room (room.id)}
+      <details open={room.id == curId? true : false}>
         <summary>Room {room.id}</summary>
         <Room form="primary" index={room.id} />
       </details>
     {/each}
-    <details open>
-      <summary>Room {rooms[rooms.length - 1].id}</summary>
-      <Room form="primary" index={rooms[rooms.length - 1].id} />
-    </details>
     <button type="button" class="add-container grid" on:click={addRoom}>
       <div class="container">
         <span class="material-symbols-outlined"> add_box </span>
