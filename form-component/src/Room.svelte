@@ -4,10 +4,10 @@
     import Dimensions from './Dimensions.svelte';
     const options = ['bedroom', 'bathroom', 'living room'
     , 'yard', 'garage', 'kitchen'];
+    import { onMount } from 'svelte';
 
     export let form;
     export let index;
-
   </script>
   
   <main>

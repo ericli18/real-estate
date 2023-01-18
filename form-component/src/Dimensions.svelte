@@ -13,7 +13,7 @@
       placeholder="Length"
       {form}
       required
-        min="0"
+      min="0"
     />
   </div>
   <div>
@@ -37,7 +37,7 @@
       placeholder="Height"
       required
       {form}
-        min="0"
+      min="0"
     />
   </div>
 </div>
@@ -47,4 +47,5 @@
   id="room{index}notes"
   name="room{index}notes"
   placeholder="Additional notes"
-  {form}></textarea>
+  {form}
+/>
