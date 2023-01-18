@@ -4,7 +4,3 @@
 </script>
 
 <Form/>
-<div class='container grid'>
-  <Room/>
-  <Room/>
-</div>
